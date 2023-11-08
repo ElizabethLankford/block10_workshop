@@ -1,3 +1,4 @@
+/* Main layout selectors */
 body{
     box-sizing: border-box;
     margin: 0;
@@ -35,6 +36,7 @@ main{
     display: flex;
     margin: auto 10%;
 }
+/* Home page selectors */
 .container-home{
     display: flex;
     justify-content: center;
@@ -55,21 +57,30 @@ main{
 .intro-text{
     font-size: 1.2em;
 }
+/* About layout selectors */
+.about{
+    display: flex;
+    flex-direction: column;
+}
+.about-info{
+
+}
 .about-info > p{
     font-size: 1.1em;
 }
 .about-info-img{
     display: flex;
-    justify-content: center;
-    gap: 1em;
     flex-wrap: wrap;
-    
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
 }
 .about-pic{
-    height: 20rem;
+    height: 13rem;
     border-radius: 3%;
     flex-wrap: wrap;
 }
+/* Portfolio layout selectors */
 .container-portfolio{
     padding: 1em;
     margin: 0 auto;
