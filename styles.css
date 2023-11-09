@@ -34,7 +34,14 @@ footer{
 }
 main{
     display: flex;
-    margin: auto 10%;
+    margin: auto;
+    padding: auto 3em;
+    max-width: 1000px;
+}
+h2{
+    font-size: 2em;
+    margin: 0;
+    padding-left: 1em;
 }
 /* Home page selectors */
 .container-home{
@@ -43,13 +50,16 @@ main{
     align-items: center;
 }
 .container-home > div{
-    width: calc(90% /2);
-}
-.container-about{
     padding: 1em;
-    margin: 0 auto;
-    max-width: 1000px;
 }
+.container-home-info > h2{
+    margin: 0;
+    padding: 0;
+}
+.container-home-pic{
+margin: 0;
+}
+
 #profile-pic{
     height: 25rem;
     border-radius: 50%;
@@ -61,9 +71,19 @@ main{
 .about{
     display: flex;
     flex-direction: column;
+    padding: 1em;
+}
+.container-about{
+    padding: 1em;
+    margin: 0 auto;
+   
 }
 .about-info{
-
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 3em;
+margin-bottom: 3em;
 }
 .about-info > p{
     font-size: 1.1em;
@@ -73,17 +93,21 @@ main{
     flex-wrap: wrap;
     gap: 2rem;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 .about-pic{
     height: 13rem;
     border-radius: 3%;
     flex-wrap: wrap;
 }
+.about-kermit{
+    width: 13em;
+    border-radius: 50%;
+}
 /* Portfolio layout selectors */
 .container-portfolio{
     padding: 1em;
-    margin: 0 auto;
+    margin-top: 2em;
 }
 .project{
     display: flex;
