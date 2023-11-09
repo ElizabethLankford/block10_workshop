@@ -40,8 +40,8 @@ main{
 }
 h2{
     font-size: 2em;
+    text-shadow: 5px 5px #cee5ff;
     margin: 0;
-    padding-left: 1em;
 }
 /* Home page selectors */
 .container-home{
@@ -71,7 +71,7 @@ margin: 0;
 .about{
     display: flex;
     flex-direction: column;
-    padding: 1em;
+    padding-top: 1em;
 }
 .container-about{
     padding: 1em;
@@ -87,6 +87,7 @@ margin-bottom: 3em;
 }
 .about-info > p{
     font-size: 1.1em;
+    line-height: 150%;
 }
 .about-info-img{
     display: flex;
@@ -119,4 +120,158 @@ project-info {
 }
 .project-pic > img {
     height: 20rem;
+}
+/* Contact layout selectors */
+section{
+    margin: 0 auto;
+}
+h3{
+    margin: 0 auto 1em;
+}
+#container-contact{
+    font-size: 20px;
+    background-color: #cee5ff;
+    border-radius: 1em;
+    margin: auto;
+    padding: 1em;
+    width: 100%;
+}
+form {
+    height: 70%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr 2fr 1fr;
+    grid-gap: 1em 3em;
+}
+/* Media Queries*/
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .container-home{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        margin: auto 10%;
+    }
+    header{
+        flex-direction: column;
+    }
+    nav{
+        width: 80%;
+    }
+    #profile-pic{
+        height: 15em;
+    }
+    .about-info-img{
+        justify-content: center;
+    }
+    .about-info{
+        flex-direction: column;
+        gap: 0;
+    }
+    .project{
+        padding-top: 2em;
+        flex-wrap: wrap;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .container-home{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        margin: auto 10%;
+    }
+    #profile-pic{
+        height: 20rem;
+    }
+    header{
+        flex-direction: column;
+    }
+    nav{
+        width: 80%;
+    }
+    .about-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0;
+        margin: 0;
+    }
+    .about-info-img{
+        margin-top: 10px;
+        justify-content: center;
+    }
+    .about-pic{
+            height: 10rem;
+            border-radius: 3%;
+            flex-wrap: wrap;
+    }
+    .project{
+        padding-bottom: 1em;
+        flex-wrap: wrap;
+    }
+    .project-pic > img {
+        height: 15rem;
+    }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    header{
+        display: flex;
+        justify-content: space-around;
+    }
+    nav{
+        width: 50%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .project{
+        flex-wrap: nowrap;
+    }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    body{
+        font-size: 16px;
+        min-width: 400px;
+    }
+    .container-home{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    header{
+        flex-direction: row;
+    }
+    .about-info{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 3em;
+        margin-bottom: 3em;
+    }
+    .project-pic > img {
+            height: 20rem;
+    }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    body{
+        font-size: 18px
+    }
+    nav{
+        width: 30%;
+    }
+    #profile-pic{
+        height: 25rem;
+    }
 }
