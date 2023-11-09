@@ -27,6 +27,10 @@ nav > a {
     text-decoration: none;
     font-size: 1.2em;
 }
+nav > a:hover{
+    color: azure;
+    font-weight: bolder;
+}
 footer{
     background-color: #aed0ff;
     text-align: center;
@@ -97,7 +101,7 @@ margin-bottom: 3em;
     justify-content: space-between;
 }
 .about-pic{
-    height: 13rem;
+    height: 13em;
     border-radius: 3%;
     flex-wrap: wrap;
 }
@@ -208,9 +212,9 @@ form {
         justify-content: center;
     }
     .about-pic{
-            height: 10rem;
-            border-radius: 3%;
-            flex-wrap: wrap;
+        height: 10em;
+        border-radius: 3%;
+        flex-wrap: wrap;
     }
     .project{
         padding-bottom: 1em;
@@ -233,6 +237,9 @@ form {
     }
     .project{
         flex-wrap: nowrap;
+    }
+    .about-pic{
+        height: 11em;
     }
 }
 /* Large devices (laptops/desktops, 992px and up) */

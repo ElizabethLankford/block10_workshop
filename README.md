@@ -1,6 +1,6 @@
 # Personal Website Block 11-12 Project
 
-The Goal for this assignment was to practice writing semantic HTML, basic CSS, and JavaScript. The project needed to be generated in a github project and repository.
+The goal for this assignment was to practice writing semantic HTML, basic CSS, and JavaScript. The project needed to be generated in a github project and repository. This project is also intended to help me practice Git through the CLI.
 
 ## Overview
 
